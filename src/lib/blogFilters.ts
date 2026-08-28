@@ -1,5 +1,6 @@
 import { BlogFilters, BlogQueryParams } from "../types/blog";
 
+
 export const SORT_OPTIONS: { value: BlogFilters["sortBy"]; label: string }[] = [
   { value: "views_desc", label: "بیشترین بازدید" },
   { value: "views_asc", label: "کمترین بازدید" },
@@ -9,8 +10,8 @@ export const SORT_OPTIONS: { value: BlogFilters["sortBy"]; label: string }[] = [
 
 export const DEFAULT_BLOG_FILTERS: BlogFilters = {
   search: "",
-  category: "",
-  author: "",
+  categoryId: "",
+  authorId: "",
   sortBy: "views_desc",
 };
 
@@ -19,8 +20,8 @@ export const toBlogQueryParams = (filters: BlogFilters): BlogQueryParams => {
 
   return {
     ...(filters.search.trim() && { q: filters.search.trim() }),
-    ...(filters.category && { category: filters.category }),
-    ...(filters.author && { author: filters.author }),
+    ...(filters.categoryId && { "category.id": filters.categoryId }),
+    ...(filters.authorId && { "author.id": filters.authorId }),
     _sort: field,
     _order: order,
   };

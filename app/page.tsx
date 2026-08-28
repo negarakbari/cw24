@@ -42,14 +42,14 @@ export default function Home() {
         {blogs?.map((blog) => (
           <article key={blog.id} className="overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm">
             <div className="relative h-40 w-full">
-              <Image src={blog.image} alt={blog.title} fill className="object-cover" unoptimized />
+              {/* <Image src={blog.image} alt={blog.title} fill className="object-cover" unoptimized /> */}
             </div>
             <div className="p-4">
-              <span className="text-xs text-purple-700">{blog.category}</span>
+              <span className="text-xs text-purple-700">{blog.category.name}</span>
               <h3 className="mt-1 line-clamp-2 font-bold">{blog.title}</h3>
               <p className="mt-1 line-clamp-2 text-sm text-gray-500">{blog.description}</p>
               <div className="mt-3 flex items-center justify-between text-xs text-gray-400">
-                <span>{blog.author}</span>
+                <span>{blog.author.name}</span>
                 <span className="flex items-center gap-1">
                   <Eye className="h-3 w-3" /> {blog.views}
                 </span>

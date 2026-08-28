@@ -1,55 +1,55 @@
 {
-"blogs": [
-{
-"id": "1",
-"title": "آموزش جامع جاوااسکریپت",
-"description": "در این مقاله با مفاهیم مهم جاوااسکریپت آشنا می‌شویم.",
-"image": "https://th.bing.com/th/id/OIP.TZv1YVvtOjjQsC8eP1Yg6QHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
-"category": {
-"id": "1",
-"name": "برنامه نویسی"
-},
-"author":{
-"id": "1",
-"name": "رضا "
-},
-"date": "2026-08-20",
-"views": 1250,
-"content": "جاوااسکریپت یکی از محبوب‌ترین زبان‌های برنامه‌نویسی برای توسعه وب است."
-},
-{
-"id": "2",
-"title": "شروع کار با React",
-"description": "مفاهیم پایه React و ساخت Component را یاد بگیرید.",
-"image": "https://th.bing.com/th/id/OIP.yG5hSQHYPWa1ZJHzdpp-MQHaEJ?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
-"category": {
-"id": "2",
-"name": "طراحی "
-},
-"author":{
-"id": "2",
-"name": "ایلیا "
-},
-"date": "2026-08-22",
-"views": 890,
-"content": "React یک کتابخانه محبوب برای ساخت رابط‌های کاربری است."
-},
-{
-"id": "3",
-"title": "آشنایی با Next.js",
-"description": "در این مقاله با Next.js و قابلیت‌های آن آشنا می‌شویم.",
-"image": "https://th.bing.com/th/id/OIP.I6lXYznbR7Rehp1TAqRjoAHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
-"category": {
-"id": "3",
-"name": "توسعه فردی "
-},
-"author":{
-"id": "3",
-"name": "امیر "
-},
-"date": "2026-08-25",
-"views": 640,
-"content": "Next.js یک فریم‌ورک React برای ساخت برنامه‌های وب مدرن است."
-}
-]
+    "blogs": [
+        {
+            "id": "1",
+            "title": "آموزش جامع جاوااسکریپت",
+            "description": "در این مقاله با مفاهیم مهم جاوااسکریپت آشنا می‌شویم.",
+            "image": "https://th.bing.com/th/id/OIP.TZv1YVvtOjjQsC8eP1Yg6QHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "category": {
+                "id": "1",
+                "name": "برنامه نویسی"
+            },
+            "author": {
+                "id": "1",
+                "name": "رضا "
+            },
+            "date": "2026-08-20",
+            "views": 1250,
+            "content": "جاوااسکریپت یکی از محبوب‌ترین زبان‌های برنامه‌نویسی برای توسعه وب است."
+        },
+        {
+            "id": "2",
+            "title": "شروع کار با React",
+            "description": "مفاهیم پایه React و ساخت Component را یاد بگیرید.",
+            "image": "https://th.bing.com/th/id/OIP.yG5hSQHYPWa1ZJHzdpp-MQHaEJ?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "category": {
+                "id": "2",
+                "name": "طراحی "
+            },
+            "author": {
+                "id": "2",
+                "name": "ایلیا "
+            },
+            "date": "2026-08-22",
+            "views": 890,
+            "content": "React یک کتابخانه محبوب برای ساخت رابط‌های کاربری است."
+        },
+        {
+            "id": "3",
+            "title": "آشنایی با Next.js",
+            "description": "در این مقاله با Next.js و قابلیت‌های آن آشنا می‌شویم.",
+            "image": "https://th.bing.com/th/id/OIP.I6lXYznbR7Rehp1TAqRjoAHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3",
+            "category": {
+                "id": "3",
+                "name": "توسعه فردی "
+            },
+            "author": {
+                "id": "3",
+                "name": "امیر "
+            },
+            "date": "2026-08-25",
+            "views": 640,
+            "content": "Next.js یک فریم‌ورک React برای ساخت برنامه‌های وب مدرن است."
+        }
+    ]
 }

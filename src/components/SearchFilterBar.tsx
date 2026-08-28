@@ -1,13 +1,14 @@
 "use client";
 
 import { Search, ChevronDown } from "lucide-react";
-import { BlogFilters, SortOption } from "../types/blog";
+import { BlogFilters, NamedEntity, SortOption } from "../types/blog";
 import { SORT_OPTIONS } from "../lib/blogFilters";
+
 
 interface SearchFilterBarProps {
   filters: BlogFilters;
-  categories: string[];
-  authors: string[];
+  categories: NamedEntity[];
+  authors: NamedEntity[];
   onChange: <K extends keyof BlogFilters>(key: K, value: BlogFilters[K]) => void;
 }
 
@@ -37,15 +38,15 @@ const SearchFilterBar = ({ filters, categories, authors, onChange }: SearchFilte
         />
 
         <FilterSelect
-          value={filters.author}
-          onChange={(value) => onChange("author", value)}
-          options={[{ value: "", label: "نویسنده" }, ...authors.map((a) => ({ value: a, label: a }))]}
+          value={filters.authorId}
+          onChange={(value) => onChange("authorId", value)}
+          options={[{ value: "", label: "نویسنده" }, ...authors.map((a) => ({ value: a.id, label: a.name.trim() }))]}
         />
 
         <FilterSelect
-          value={filters.category}
-          onChange={(value) => onChange("category", value)}
-          options={[{ value: "", label: "دسته‌بندی" }, ...categories.map((c) => ({ value: c, label: c }))]}
+          value={filters.categoryId}
+          onChange={(value) => onChange("categoryId", value)}
+          options={[{ value: "", label: "دسته‌بندی" }, ...categories.map((c) => ({ value: c.id, label: c.name.trim() }))]}
         />
       </div>
     </div>
